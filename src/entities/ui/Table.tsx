@@ -2,6 +2,9 @@ import { useStoreMap } from "effector-react";
 import { fetchPosts, $posts } from "./model";
 import styles from "../../styles/Table.module.css";
 
+
+// TODO: сделать более переиспользуемый компонент, логику эффектора вынести во view
+
 export function Table() {
   const posts = useStoreMap({
     store: $posts,
