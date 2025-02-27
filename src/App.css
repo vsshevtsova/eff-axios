@@ -10,7 +10,8 @@
 }
 
 #root {
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 2rem;
@@ -21,6 +22,6 @@
 }
 
 .container {
-  width: 60%;
+  width: 60vw;
   margin: 0 auto;
 }

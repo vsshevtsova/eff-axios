@@ -14,7 +14,7 @@ export function Table() {
       <button onClick={() => fetchPosts()} className={styles.button}>
         Получить данные
       </button>
-      <div className="grid-container">
+      <div>
         {posts.map((post) => (
           <div key={post.id} className={styles.postContainer}>
             <div className={styles.containerHeader}>
