@@ -1,6 +1,9 @@
 import { createStore, createEffect, createEvent } from "effector";
 import axios from "axios";
 
+// TODO: вынести в папку api папка service
+
+//#region move
 interface Post {
   userId: number;
   id: number;
@@ -22,6 +25,8 @@ fetchPosts.watch(() => {
     console.error("Ошибка при загрузке данных:", error);
   });
 });
+
+//#endregion move
 
 export const $posts = createStore<Post[]>([]).on(
   fetchDataFx.doneData,
