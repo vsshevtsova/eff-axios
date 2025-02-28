@@ -1,0 +1,32 @@
+.button {
+  width: 100%;
+  background: none;
+  color: var(--main-dark-color);
+
+  border-radius: 8px;
+  border: 1px solid var(--dark);
+
+  margin: 0 0 20px 0;
+  padding: 0.6em 1.2em;
+
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  &:hover {
+    color: var(--blue);
+    border-color: var(--blue);
+  }
+
+  &:active {
+    color: var(--dark);
+    border-color: var(--dark);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}

@@ -1,5 +1,5 @@
-import { Table } from "./entities/ui/Table";
-import "./App.css";
+import { TableView } from "./views/TableView/TableView.tsx";
+import "./assets/styles/app.scss";
 
 // TODO: сделать другую иерархию папок:
 // src
@@ -20,7 +20,7 @@ import "./App.css";
 function App() {
   return (
     <div className="container">
-      <Table />
+      <TableView />
     </div>
   );
 }
