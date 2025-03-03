@@ -1,10 +1,9 @@
 import { useUnit } from "effector-react";
-import { fetchPosts, $posts } from "./model";
+import { $posts } from "./model";
+import { fetchPosts } from "../../services/api";
 import { Button } from "../../components/Button/Button";
 import { Table } from "../../components/Table/Table";
 import "./TableView.scss";
-
-// TODO: сделать более переиспользуемый компонент, логику эффектора вынести во view
 
 export function TableView() {
   const posts = useUnit($posts);
